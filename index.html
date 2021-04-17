@@ -1,291 +1,260 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Ethan's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+      <title>Ethan's Portfolio</title>
+      <link rel="stylesheet" href="assets/css/main.css">
+    </head>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+    <body>
 
-				<!-- Homepage -->
-					<section class="banner style5 orient-center content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-right onscroll-image-fade-in">
-						<div class="content">
-							<h1>Ethan Quan</h1>									
-							<p class="major">Aspiring engineer and high school student at the 
-								Galileo Academy of Science and Technology, San Francisco</p>
-							<ul class="actions stacked">
-								<li> <a href="#robotics" class="button big wide smooth-scroll-middle">My Projects</a>  <a href="resume.pdf" class="button big wide smooth-scroll-middle">My Resume</a></li>
-								
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/banner.jpg" alt="" />
-						</div>
-					</section>
+        <!-- Navigation Bar -->
+        
+        
+        <nav class="nav">
+            <a class="navhome" href="#"><img src="images/signature2.png" alt="" width="100px"> </a>
+            <a class="navButton" onclick="toggleNav()"><img src="menu.png" alt="" width="25px"> </a>
+            <div class="navwrap">            
+                <a href="robotics.html">ROBOTICS</a>
+                <a href="rocketry.html">ROCKETRY</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="resume.pdf">RESUME</a>                
+            </div>
+            
+        </nav> 
 
-			<!-- Spotlights -->
+        <div id="sidebar" class="sidebar">
+            
+            <a href="robotics.html">ROBOTICS</a>
+            <a href="rocketry.html">ROCKETRY</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="resume.pdf">RESUME</a> 
+        </div>
 
-				<!-- Robotics -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center " >
-					<a id="robotics"></a>
-						<div class="content">
-							<h2>Robotics</h2>
-							<p>Captain and Lead Designer for Galileo Robotics, FIRST Robotics Competition Team 4669.<br>I have worked on their 2019 Deep Space, 2020 Infinite Recharge, and 2021 Game Changers competition robots as well several other robotics related designs.</p>
-							<ul class="actions stacked">
-								<li><a href="robotics.html" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/gr9/robot-1-spotlight.png" alt="" />
-						</div>
-					</section>
+        <!-- Landing Home Thingy -->
+        <div class="home" id="home">
+            <div class="intro">
+                <h1>
+                    ETHAN QUAN
+                </h1> 
+                <h2>
+                    Aspiring engineer and high school student at the Galileo Academy of Science and Technology, San Francisco
+                </h2>
+                <a href="#projects" class="button-white">PROJECTS</a>
+                <a href="#gallery" class="button-white">GALLERY</a>
+            </div>
+            
+        </div>
 
-				<!-- Rocketry -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center ">
-					<a id="rocketry"></a>
-						<div class="content">
-							<h2>Rocketry</h2>
-							<p>Founder and Captain of Galileo Rocketry, American Rocketry Challenge Team 20-6661.</p>
-							<ul class="actions stacked">
-								<li><a href="rocketry.html" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/rocket/rocket.png" alt="" />
-						</div>
-					</section>
+        <!-- Projects -->
+        <a id="projects"></a>
+        <header class="header" style="padding-top: 4.5em;">
+            <h1>
+                PROJECTS
+            </h1>
+        </header>
+        
+        <section class="content">
+           
+            <!-- Robotics -->
+            <article class="content-item content-1">
+                <h3>Robotics</h3>
+                <p>
+                    Captain and Lead Designer for Galileo Robotics, FIRST Robotics Competition Team 4669.
+                <br><br>
+                    I have worked on their 2019 Deep Space, 2020 Infinite Recharge, and 2021 Game Changers 
+                    competition robots as well several other robotics related designs.
+                </p>
 
-				<!-- Other -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center ">
-					<a id="other"></a>
-						<div class="content">
-							<h2>Other Projects</h2>
-							<p>Some other models that I've worked on in my free time. Some are practical, others just look cool.</p>
-							<ul class="actions stacked">
-								<li><a href="other.html" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/mk3.png" alt="" />
-						</div>
-					</section>
+                <a href="robotics.html" class="button-black">LEARN MORE</a>
+            </article>
+                <div class="content-item pic-1">
+                    <img src="images/gr9/robot-5.png" alt="">
+                </div>
 
-				<!-- Gallery Header -->
-					<section class="wrapper style1 align-center">
-						<div class="inner" >
-							<h2>Gallery</h2>
-							<p >A showcase of my CAD designs. Some are original designs and others are modeled based on real objects. Hover over the image to learn more.</p>
-						</div>
+            <!-- Rocketry -->
+            <article class="content-item content-2">
+                <h3>Rocketry</h3>
+                <p>
+                    Founder and Captain of Galileo Rocketry, American Rocketry Challenge Team 20-6661.
+                </p>
 
-						<!-- Gallery -->
-							<div class="gallery style1 medium lightbox ">
-								<article>
-									<a href="images/gr9/robot-1.png" class="image">
-										<img src="images/gr9/robot-1-thumb.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sentinel</h3>
-										<p>Improved design of Galileo Robotics' 2020 robot; intended for FRC's 2021 competition (Game Changers).</p>
-										<ul class="actions fixed">
-											<li><a href="robotics.html#frc2021-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>						
-								<article>
-									<a href="images/revolution/top.png" class="image">
-										<img src="images/revolution/top-thumb.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Revolution</h3>
-										<p>A concept robot for InspireNC's 2020 CAD Challenge - Green Generation.</p>
-										<ul class="actions fixed">
-											<li><a href="robotics.html#revolution-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/render4.png" class="image">
-										<img src="images/render4-thumb.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>GR-8</h3>
-										<p>Galileo Robotics' 2020 robot for FRC Infinite Recharge.</p>
-										<ul class="actions fixed">
-											<li><a href="robotics.html#frc2020-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/rocket2.png" class="image">
-										<img src="images/rocket2.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Galilei</h3>
-										<p>Galileo Rocketry's 2020 rocket for the American Rocketry Competition.</p>
-										<ul class="actions fixed">
-											<li><a href="rocketry.html#tarc2020-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/differential3.png" class="image">
-										<img src="images/differential3.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Differential</h3>
-										<p>A custom swerve module powered by two Falcon 500s and a NEO 550. Shifting mechanism included to allow for dual speed.</p>
-										<ul class="actions fixed">
-											<li><a href="robotics.html#differential-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/ratio.png" class="image">
-										<img src="images/ratio.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ratio</h3>
-										<p>A double Falcon 500 dual speed gearbox. Optimized for a smaller form factor and for use in west-coast drive styles.</p>
-										<ul class="actions fixed">
-											<li><a href="robotics.html#ratio-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/render1.png" class="image">
-										<img src="images/render1-thumb.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>High Spread Gearbox</h3>
-										<p>A 38.44x spread shifting gearbox designed for use in FRC for an elevator/climber. Lowest and highest ratios are 329.59:1 and 8.57:1.</p>
-										<ul class="actions fixed">
-											<li><a href="robotics.html#hsgearbox-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gearbox.png" class="image">
-										<img src="images/gearbox-thumb.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Triple Falcon Gearbox</h3>
-										<p>A dual speed drivetrain gearbox powered by three Falcon 500s. Intended to be a compact high performance gearbox for FRC robots.</p>
-										<ul class="actions fixed">
-											<li><a href="robotics.html#3falcon" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/turret.png" class="image">
-										<img src="images/turret.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Variable-Angle Turreted Shooter</h3>
-										<p>Designed for Sentinel, an redesign of Galileo Robotics' 2020 Infinite Recharge robot. Meant to score 7" Infinite Recharge balls.</p>
-										<ul class="actions fixed">
-											<li><a href="robotics.html#frc2021-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/mk3.png" class="image">
-										<img src="images/mk3-thumb.png" alt=""/>
-									</a>
-									<div class="caption">
-										<h3>Bolt Action Pen</h3>
-										<p>Bolt action style pen for Pilot G2 cartridges. Can be 3D printed or theorectically machined out of aluminum.</p>
-										<ul class="actions fixed">
-											<li><a href="other.html#boltpen-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/AMDCPU4.png" class="image">
-										<img src="images/AMDCPU.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>AMD Ryzen CPU</h3>
-										<p>A model of AMD's Ryzen CPU (Zen 2) for rendering purposes. Realistic size and number of pins.</p>
-										<ul class="actions fixed">
-											<li><a href="other.html#ryzen-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>												
-								<article>
-									<a href="images/Transamerica.png" class="image">
-										<img src="images/Transamerica.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Minimalist Transamerica Pyramid</h3>
-										<p>A minimalist rendition of San Francisco's Transamerica Pyramid. Not to scale.</p>
-										<ul class="actions fixed">
-											<li><a href="other.html#transamerica-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/bin.png" class="image">
-										<img src="images/bin.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>3D Printable Stackable Bin</h3>
-										<p>A high volume parts bin that can be 3D printed. This modular design can be stacked quite high.</p>
-										<ul class="actions fixed">
-											<li><a href="other.html#bin-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/bracelet.png" class="image">
-										<img src="images/bracelet.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>3D Printed Flexible Bracelet</h3>
-										<p>A stylish bracelet that can be 3D printed in one piece.	 </p>
-										<ul class="actions fixed">
-											<li><a href="other.html#bracelet-top" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								
-								
-							</div>
+                <a href="#" class="button-black">LEARN MORE</a>
+            </article>
+                <div class="content-item pic-2">
+                    <img src="images/rocket/rocket-2.png" alt="">
+                </div>
+            
+            <!-- Other -->
+            <article class="content-item content-3">
+                <h3>Other Projects</h3>
+                <p>
+                    Some other models that I've worked on in my free time. Some are practical, others just look cool.
+                </p>
 
-					</section>			
-				
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">								
-								<!-- 
-								<li><a href="https://www.instagram.com/ethancquan/" class="icon brands style2 fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-								<li><a href="" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-								<br>
-								<li><a href="" ><span class="label">Grabcad</span></a></li>
-								<li><a href="" ><span class="label">Thingiverse</span></a></li>
-								-->
-							</ul>
-							<p style="font-size:0.75em">Hosted on Github Pages; theme by HTML5 UP. Content by Ethan Quan. <br>All CADs designed by Ethan Quan; some may contain commercial off the shelf components <br>(from manufacturers such as VexRobotics, WCProducts, McMaster-Carr). </p>
-							<p>&copy; Ethan Quan </p>
-						</div>
-					</footer>
+                <a href="#" class="button-black">LEARN MORE</a>
+            </article>
+                <div class="content-item pic-3">
+                    <img src="images/mk3-thumb.png" alt="">
+                </div>               
 
-			</div>
+        </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
-</html>
+
+        <!-- Gallery -->
+        <a id="gallery"></a>
+        <div class="header">
+            <h1>
+                GALLERY
+            </h1>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                
+                <a href="robotics.html#gr9">
+                    <img src="images/gallery/gr9.png" alt="">
+                    <h4>Sentinel</h4>
+                    <p>
+                        Improved design of Galileo Robotics' 2020 robot; intented for FRC's 2021 competition (Game Changers).
+                    </p>
+                </a> 
+
+            </div>
+
+            <div class="gallery-item">
+                <a href="robotics.html#frc2020">
+                    <img src="images/gallery/gr8.png" alt="">
+                    <h4>GR-8</h4>
+                    <p>
+                    Galileo Robotics' 2020 robot for FRC's 2020 competition (Infinite Recharge).
+                    </p>
+                </a>
+            </div>
+
+
+            <div class="gallery-item">
+                <a href="robotics.html#revolution">
+                    <img src="images/gallery/revolution.png" alt="">
+                    <h4><i>REVOLUTION</i></h4>
+                    <p>
+                    A concept robot for InspireNC's Summer 2020 CAD Challenge (Green Generation)
+                    </p>
+                </a>
+            </div> 
+
+            <div class="gallery-item">                
+                <a href="rocketry.html#tarc2020">
+                    <img src="images/gallery/rocket.png" alt="">
+                    <h4>Galilei</h4>
+                    <p>
+                    Galileo Rocketry's 2020 rocket for the American Rocketry Challenge.
+                    </p>
+                </a>
+            </div>
+
+            <div class="gallery-item">                
+                <a href="robotics.html#differential" >
+                    <img src="images/gallery/differential.png" alt="">
+                    <h4>Differential</h4>
+                    <p>
+                        A custom swerve module powered by two Falcon 500s and a NEO 550. Shifting mechanism included to allow for dual speed.
+                    </p>
+                </a>
+            </div>
+            
+            <div class="gallery-item">                
+                <a href="robotics.html#ratio">
+                    <img src="images/gallery/ratio.png" alt="">
+                    <h4>Ratio</h4>
+                    <p>
+                        A double Falcon 500 dual speed gearbox. Optimized for a smaller form factor and for use in west-coast drive styles.
+                    </p>
+                </a>
+            </div>
+            
+            <div class="gallery-item">             
+                <a href="robotics.html#hs">
+                    <img src="images/gallery/hsgearbox.png" alt="">   
+                    <h4>High Spread Gearbox</h4>
+                    <p>
+                        A 38.44x spread shifting gearbox designed for use in FRC for an elevator/climber. Lowest and highest ratios are 329.59:1 and 8.57:1.
+                    </p>
+                </a>
+            </div>
+            
+            <div class="gallery-item">                
+                <a href="robotics.html#3falcon">
+                    <img src="images/gallery/triplefalcon.png" alt="">
+                    <h4>Triple Falcon Gearbox</h4>
+                    <p>
+                        A dual speed drivetrain gearbox powered by three Falcon 500s. Intended to be a compact high performance gearbox for FRC robots.
+                    </p>
+                </a>
+            </div>
+            
+            <div class="gallery-item">
+                
+                <a href="projects.html#bp">
+                    <img src="images/gallery/boltaction.png" alt="">
+                    <h4>Bolt-Action Pen</h4>
+                    <p>
+                        Bolt action style pen for Pilot G2 cartridges. Can be 3D printed or theorectically machined out of aluminum.
+                    </p>
+                </a>
+            </div>
+            
+            <div class="gallery-item">
+                
+                <a href="projects.html#amd">
+                    <img src="images/gallery/amd.png" alt="">
+                    <h4>AMD Ryzen CPU</h4>
+                    <p>
+                        A model of AMD's Ryzen CPU (Zen 2) for rendering purposes. Realistic size and number of pins.
+                    </p>
+                </a>
+            </div>
+            
+            <div class="gallery-item">             
+                <a href="projects.html#transamerica" >
+                    <img src="images/gallery/transamerica.png" alt="">   
+                    <h4>Transamerica Pyramid</h4>
+                    <p>
+                        A minimalist rendition of San Francisco's Transamerica Pyramid. Not to scale.
+                    </p>
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+        <footer>
+            <p>© Ethan Quan</p>
+        </footer>
+    
+
+        <script>
+                     
+            function toggleNav() {
+              
+              if (document.getElementById("sidebar").style.height <= "0em") {
+                document.getElementById("sidebar").style.height = "12em";
+                document.getElementById("sidebar").style.zIndex = "1"; 
+                document.getElementById("sidebar").style.marginTop = "3.25em";    
+                document.getElementById("home").style.marginTop = "16em";  
+              }
+              else {
+                document.getElementById("sidebar").style.height = "0em";
+                document.getElementById("sidebar").style.zIndex = "-1"; 
+                document.getElementById("home").style.marginTop = "6em";  
+              }
+
+            }
+        </script>
+
+
+
+    </body>
+</html> 
