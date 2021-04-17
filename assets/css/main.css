@@ -66,11 +66,8 @@ html {
 
   
 
-.navButton {
-    position: fixed;
-    padding-top: 0.35em;
-    padding-right: 2.5em;
-
+.navButton { 
+    width: 0;
     visibility: hidden;
 }
   
@@ -80,6 +77,8 @@ html {
 
 .nav {
     width: 100%;
+    text-align: center;
+
     padding: 1.25em 1em 1.25em 1em;
     margin-bottom: 2em;
 
@@ -87,6 +86,8 @@ html {
     margin-left: auto;
     border-bottom: 1px solid rgb(150, 150, 150);
     background-color: white;
+
+    display: flex;
     position: fixed;
 
     
@@ -96,21 +97,22 @@ html {
 
 .navmenu {
     width: 100%;
-    
-    display: flex;
     align-items: center;
 }
 
 .navhome {
-    position: fixed;
-    padding-left: 2em;
+    position:fixed;
+    display: block;
+    padding-left: 1em;
     z-index: 1;
 }
 
 .navwrap {
     width: 100%;
+    margin-right: 3em;
     display: flex;
     justify-content: center;
+
    
 }
 
@@ -675,13 +677,23 @@ footer {
     
 
     .navButton {
+        padding-top: 0.375em; 
+        position: fixed;
+        
+        width: 100%;
+        margin-right: 2em;
         visibility: visible;
         
     }
 
     .nav {
-        display: flex;
-        justify-content: right;
+   
+        display: grid;
+        width: 100%;
+        align-items: center;
+        grid-template-columns: 3fr 1fr 0px;
+
+        
     }
 
     .navwrap {
