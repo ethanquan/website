@@ -453,6 +453,15 @@ footer {
         color:rgb(100, 100, 100)
     }
 
+.socials {
+    padding: 0.5em 0.15em 1em 0.15em;
+    color: rgb(100, 100, 100);
+    transition: 0.8s;
+}
+    .socials:hover {
+        color: blue;
+        transition: 0.8s;
+    }
 
 :target {
     display: block;
